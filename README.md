@@ -26,7 +26,7 @@ Ejecutando las pruebas ⚙️ En desarrollo ... 🔧 🔩
 
 Analice las pruebas end-to-end 🔩 En desarrollo ... 📚
 
-Despliegue 📦:
+Despliegue 📦: el server se desplegara en el puerto 3002, url ✒️ http://localhost:3002
 
 Para correr el proyecto es necesario abrir un terminal en la raiz y escribir los suiguientes comandos:
 
