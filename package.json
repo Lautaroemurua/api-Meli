@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server Test MercadoLibre",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lautaroemurua/testMeli.git"
+  },
+  "author": "Lautaro Ezequiel Murua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lautaroemurua/testMeli/issues"
+  },
+  "homepage": "https://github.com/Lautaroemurua/testMeli#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  }
+}
