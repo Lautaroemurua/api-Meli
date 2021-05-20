@@ -37,7 +37,7 @@ Para correr el proyecto es necesario abrir un terminal en la raiz y escribir los
 
 
 
-Construido con 🛠️ Menciona las herramientas que utilizaste para crear tu proyecto
+Construido con: 🛠️
 
 Visual Code - IDE de desarrollo
 
