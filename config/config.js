@@ -5,7 +5,8 @@ module.exports = {
       BASE_URL: 'https://api.mercadolibre.com/',
       ENDPOINTS: {
         search: 'sites/MLA/search',
-        items: 'items'
+        items: 'items',
+        description: 'description'
       }
     }
   }

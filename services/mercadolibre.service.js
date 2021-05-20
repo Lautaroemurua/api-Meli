@@ -39,7 +39,14 @@ MeliService.search = async (obj) => {
 }
 
 MeliService.searchById = async (id) => {
-  const response = await fetch(`${config.BASE_URL}${config.ENDPOINTS.items}/${id}`).then(promisseFetch => promisseFetch.json());
+	const response = await fetch(`${config.BASE_URL}${config.ENDPOINTS.items}/${id}`)
+	.then(promisseFetch => promisseFetch.json());
+	return response;
+}
+
+MeliService.searchDescriptionById = async (id) => {
+	const response = await fetch(`${config.BASE_URL}${config.ENDPOINTS.items}/${id}/${config.ENDPOINTS.description}`)
+	.then(promisseFetch => promisseFetch.json());
 	return response;
 }
 module.exports = MeliService;

@@ -23,4 +23,14 @@ controller.find = async (req, res) => {
  }
 }
 
+controller.description = async (req, res) => {
+  let id = req.params.id;
+ if (id) {
+   const item = await MeliService.searchDescriptionById(id);
+   res.json(item);
+ } else {
+   res.json({msg: 'No hay id'});
+ }
+}
+
 module.exports = controller
