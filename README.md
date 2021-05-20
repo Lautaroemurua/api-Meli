@@ -8,7 +8,8 @@ Aplicacion Node Js que expone 2 enpoints: ✌️
 
 Levantando el server... 🚀
 
-Empezemos, para levantar el server en tu maquina local es necesario abrir un terminal 💻 en una ruta de su preferencia y tipear los siguiente comandos para realizar la clonacion: git clone https://github.com/Lautaroemurua/api-Meli.git
+Empezemos, para levantar el server en tu maquina local es necesario abrir un terminal 💻 en una ruta de su preferencia y tipear los siguiente comandos para realizar la clonacion: 
+git clone https://github.com/Lautaroemurua/api-Meli.git
 
 👀 Mira Deployment para conocer como desplegar el proyecto.
 
@@ -26,7 +27,7 @@ Ejecutando las pruebas ⚙️ En desarrollo ... 🔧 🔩
 
 Analice las pruebas end-to-end 🔩 En desarrollo ... 📚
 
-Despliegue 📦:
+Despliegue 📦: el server se desplegara en el puerto 3002, url ✒️ http://localhost:3002
 
 Para correr el proyecto es necesario abrir un terminal en la raiz y escribir los suiguientes comandos:
 
@@ -36,7 +37,7 @@ Para correr el proyecto es necesario abrir un terminal en la raiz y escribir los
 
 
 
-Construido con 🛠️ Menciona las herramientas que utilizaste para crear tu proyecto
+Construido con: 🛠️
 
 Visual Code - IDE de desarrollo
 
