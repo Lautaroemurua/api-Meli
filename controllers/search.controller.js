@@ -13,16 +13,6 @@ controller.list = async (req, res) => {
   }
 }
 
-controller.find = async (req, res) => {
-  let id = req.params.id;
- if (id) {
-   const item = await MeliService.searchById(id);
-   res.json(item);
- } else {
-   res.json({msg: 'No hay id'});
- }
-}
-
 controller.description = async (req, res) => {
   let id = req.params.id;
  if (id) {

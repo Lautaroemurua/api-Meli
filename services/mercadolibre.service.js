@@ -38,11 +38,6 @@ MeliService.search = async (obj) => {
 	}
 }
 
-MeliService.searchById = async (id) => {
-	const response = await fetch(`${config.BASE_URL}${config.ENDPOINTS.items}/${id}`)
-	.then(promisseFetch => promisseFetch.json());
-	return response;
-}
 function getDecimals(e) {
 	console.log(e)
 	let decimals = e.price - Math.floor(e.price);
