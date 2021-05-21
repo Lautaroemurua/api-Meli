@@ -43,10 +43,39 @@ MeliService.searchById = async (id) => {
 	.then(promisseFetch => promisseFetch.json());
 	return response;
 }
+function getDecimals(e) {
+	console.log(e)
+	let decimals = e.price - Math.floor(e.price);
+	decimals = decimals.toFixed(2).toString().substring(2, 4);
+	return decimals;
+}
 
 MeliService.searchDescriptionById = async (id) => {
-	const response = await fetch(`${config.BASE_URL}${config.ENDPOINTS.items}/${id}/${config.ENDPOINTS.description}`)
+	const response = await fetch(`${config.BASE_URL}${config.ENDPOINTS.items}/${id}`)
 	.then(promisseFetch => promisseFetch.json());
-	return response;
+
+	const response2 = await fetch(`${config.BASE_URL}${config.ENDPOINTS.items}/${id}/${config.ENDPOINTS.description}`)
+	.then(promisseFetch => promisseFetch.json());
+
+	const resObj = {
+		author: {
+			name: 'Lautaro Ezequiel',
+			lastname: 'Murua'
+		},
+		item: {}
+	}
+	resObj.item.id = response.id;
+	resObj.item.title = response.title;
+	resObj.item.price = {};
+	resObj.item.price.currency = response.currency_id;
+	resObj.item.price.amount = Math.trunc(response.price),
+	resObj.item.price.decimals = getDecimals(response.price);
+	resObj.picture = response.thumbnail;
+	resObj.condition  = response.condition;
+	resObj.free_shipping = response.shipping.free_shipping;
+	resObj.sold_quantity = response.sold_quantity;
+	resObj.description = response2.plain_text;
+
+	return resObj;
 }
 module.exports = MeliService;
