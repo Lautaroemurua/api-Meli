@@ -39,7 +39,6 @@ MeliService.search = async (obj) => {
 }
 
 function getDecimals(e) {
-	console.log(e)
 	let decimals = e.price - Math.floor(e.price);
 	decimals = decimals.toFixed(2).toString().substring(2, 4);
 	return decimals;
