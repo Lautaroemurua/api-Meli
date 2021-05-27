@@ -64,12 +64,11 @@ MeliService.searchDescriptionById = async (id) => {
 	resObj.item.price.currency = response.currency_id;
 	resObj.item.price.amount = Math.trunc(response.price),
 	resObj.item.price.decimals = getDecimals(response.price);
-	resObj.picture = response.thumbnail;
+	resObj.picture = response.pictures[0].url;
 	resObj.condition  = response.condition;
 	resObj.free_shipping = response.shipping.free_shipping;
 	resObj.sold_quantity = response.sold_quantity;
 	resObj.description = response2.plain_text;
-
 	return resObj;
 }
 module.exports = MeliService;
