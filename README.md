@@ -34,7 +34,7 @@ Un objeto como este :
 }
 ```
 
-2️⃣ El segundo: devuelve la informacion de un item ☝️ en paritcular a partir de su id el cual se recibe por parametros.
+2️⃣ El segundo: devuelve la informacion de un item ☝️ en paritcular a partir de su id el cual se recibe por parametros. Por ejemplo:
 
 ```json
 {
