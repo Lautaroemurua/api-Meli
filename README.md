@@ -4,8 +4,9 @@ Aplicacion Node Js que expone 2 enpoints: ✌️
 
 1️⃣ El primero: Devuelve una lista 📋  de :four: items a partir de la busqueda 🔍 de un termino coincidentes con un queryparams (cadena de texto) recibido.
 
-Un objeto como este : 
+Un objeto como este :
 
+```json
 {
   "author": {
     "name": "Lautaro Ezequiel",
@@ -31,10 +32,11 @@ Un objeto como este :
     {},
   ]
 }
-
+```
 
 2️⃣ El segundo: devuelve la informacion de un item ☝️ en paritcular a partir de su id el cual se recibe por parametros.
 
+```json
 {
   "author": {
     "name": "Lautaro Ezequiel",
@@ -55,6 +57,7 @@ Un objeto como este :
   "sold_quantity": 250,
   "description": "Somos Jugueteria Toy Piola \nArma Lanza Dardos Simil ......"
 }
+```
 
 Levantando el server... 🚀
 
